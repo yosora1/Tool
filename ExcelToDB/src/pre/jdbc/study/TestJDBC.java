@@ -4,9 +4,9 @@ import java.sql.*;
 
 public class TestJDBC {
 	public static String driver="com.microsoft.sqlserver.jdbc.SQLServerDriver";
-	public static String URL="jdbc:sqlserver://localhost:1433;DatabaseName=SysData";
+	public static String URL="jdbc:sqlserver://localhost:3443;DatabaseName=Data";
 	public static String Name="sa";
-	public static String Password="yotan";
+	public static String Password="123";
 	private static Connection con=null;
 	
 	public static Connection getConnection(){

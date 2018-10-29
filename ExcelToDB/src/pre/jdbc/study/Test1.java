@@ -37,6 +37,7 @@ public class Test1 {
 				XSSFRow row=xsfs.getRow(i);
 				XSSFCell cell=row.getCell(j);
 				if(j==1){
+					//判断数据格式
 					switch (cell.getCellTypeEnum()) {
 					 case STRING:  
 	                     Phone = cell.toString();  
@@ -64,7 +65,7 @@ public class Test1 {
 						
 					}else{
 						System.out.println(RealName+"不存在"+Phone);
-						
+						//汉字转拼音
 						char[] newChar = RealName.toCharArray();
 						HanyuPinyinOutputFormat defaultFormat = new HanyuPinyinOutputFormat();  
 						  defaultFormat.setCaseType(HanyuPinyinCaseType.LOWERCASE);  
